@@ -23,6 +23,9 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -68,17 +71,32 @@
 	  <hr>
 
       <div class="row">
-        <div class="col-md-4">
-		  <p>Vid here</p>
-		</div>
-		<div class="col-md-4">
-		  <h2>Hearthbean Log</h2>
-		  <p>Cards log goes here:</p>
-		  <p>You drew Ragnaros!</p>
-		  <p>Your opponent played Sylvanas!</p>
-		</div>
-          <h2>Card Name</h2>
-		  <p>Card image here when clicked</p>
+        <div class="col-md-8">
+          <video width="640" height="480" controls>
+            <source src="https://s3.amazonaws.com/tokbox.com.archive2/45793372/82bca547-d3e6-4d00-aaf0-130653b2ca99/archive.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+		    </div>
+        <div class="col-md-3">
+          <h2>Hearthbean Log</h2>
+          <ul>
+            <li>Turn 1</li>
+              <ul>
+                <li>You: <a>The Coin</a></li>
+                <li>You: <a href="">Acidic Swamp Ooze</a></li>
+                <li></li>
+                <li>Opponent: <a href="">Armor Up!</a></li>
+              </ul>
+            <li>Turn 2</li>
+              <ul>
+                <li>You: -</li>
+                <li></li>
+                <li>Opponent: <a href="">Fiery War Axe</a></li>
+              </ul>
+          </ul>
+        </div>
+          <!--<h2>Card Name</h2>
+		  <p>Card image here when clicked</p>-->
 
       </div>
     </div>
